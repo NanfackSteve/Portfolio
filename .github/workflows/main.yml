@@ -1,0 +1,27 @@
+name: Deploy My Portfolio to AWS-EC2
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install rsync and sshpass
+      run: sudo apt-get update && sudo apt-get install rsync sshpass
+
+    - name: Deploy to EC2
+      env:
+        HOST: ${{ secrets.EC2_HOST }}
+        USER: ${{ secrets.EC2_USER }}
+        PASS: ${{ secrets.EC2_PASSWORD }}
+      run: |
+        # Déploiement du frontend
+        sshpass -p "$PASS" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ./ ${USER}@${HOST}:/var/www/html/nanfacksteve.tech/
+        
+        # Redémarrage du frontend
+        #sshpass -p "$PASS" ssh -o StrictHostKeyChecking=no ${USER}@${HOST} 'docker restart prodcard-frontend-1'
