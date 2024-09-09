@@ -26,7 +26,7 @@ jobs:
         PASS: ${{ secrets.EC2_PASSWORD }}
       run: |
         # Déploiement du frontend
-        sshpass -p "$PASS" rsync -vz --delete --exclude '.git' --exclude '.github' -e "ssh -o StrictHostKeyChecking=no" ./ ${USER}@${HOST}:/var/www/html/nanfacksteve.tech/
+        sshpass -p "$PASS" rsync -rvz --delete --exclude '.git' --exclude '.github' -e "ssh -o StrictHostKeyChecking=no" ./ ${USER}@${HOST}:/var/www/html/nanfacksteve.tech/
         
         # Redémarrage du frontend
         #sshpass -p "$PASS" ssh -o StrictHostKeyChecking=no ${USER}@${HOST} 'docker restart prodcard-frontend-1'
