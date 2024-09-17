@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Nanfack Steve - Porfolio</title>
+        <title>Nanfack Steve - Portfolio</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -94,9 +94,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#mh-pricing">Pricing</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#mh-blog">Blog</a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a class="nav-link" href="#mh-contact">Contact</a>
                                 </li>
@@ -135,7 +135,7 @@
                                             class="fa fa-envelope"></i><a href="mailto:">nanfacksteve7@gmail.com</a>
                                     </li>
                                     <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i
-                                            class="fa fa-phone"></i><a href="callto:+237693736932">(+237) 693 736
+                                            class="fa fa-phone"></i><a href="tel:+237693736932">(+237) 693 736
                                             932</a></li>
                                     <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i
                                             class="fa fa-map-marker"></i>
@@ -186,17 +186,19 @@
                                 increasing its productivity, its success rate and its profitability.</p>
                             <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                 <ul>
-                                    <li><span>php</span></li>
-                                    <li><span>html</span></li>
-                                    <li><span>css</span></li>
-                                    <li><span>php</span></li>
-                                    <li><span>wordpress</span></li>
-                                    <li><span>React</span></li>
-                                    <li><span>Javascript</span></li>
+                                    <li><span>GNU/Linux</span></li>
+                                    <li><span>C/C++</span></li>
+                                    <li><span>PHP</span></li>
+                                    <li><span>Python</span></li>
+                                    <li><span>SQL/NoSQL</span></li>
+                                    <li><span>Virtualization</span></li>
+                                    <li><span>Docker</span></li>
+                                    <li><span>Git/GitHub</span></li>
                                 </ul>
                             </div>
-                            <a href="#" class="btn btn-fill wow fadeInUp" data-wow-duration="0.8s"
-                                data-wow-delay="0.4s">Downlaod CV <i class="fa fa-download"></i></a>
+                            <a class="btn btn-fill wow fadeInUp" target="_blank" href="files/CV_SUN.pdf"
+                                download="CV_SUN.pdf" data-wow-duration="0.8s" data-wow-delay="0.4s">Downlaod CV <i
+                                    class="fa fa-download"></i></a>
                         </div>
                     </div>
                 </div>
@@ -220,10 +222,11 @@
                             data-wow-delay="0.3s">
                             <i class="fa fa-bullseye purple-color"></i>
                             <h3>sysAdmin</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                magna aliquam erat volutpat.
+                            <p style="text-align: justify;">
+                                As an experienced system and cloud administrator, I manage and optimize hybrid
+                                infrastructures. I am responsible for configuring, maintaining and securing
+                                heterogeneous server farms, both on-premises and in the cloud. My expertise covers the
+                                deployment and management of resources on Cloud platforms.
                             </p>
                         </div>
                     </div>
@@ -231,11 +234,12 @@
                         <div class="mh-service-item shadow-1 dark-bg wow fadeInUp" data-wow-duration="0.8s"
                             data-wow-delay="0.5s">
                             <i class="fa fa-code iron-color"></i>
-                            <h3>Web Development</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                magna aliquam erat volutpat.
+                            <h3>Automation</h3>
+                            <p style="text-align: justify;">
+                                As an automation expert, I am proficient in Infrastructure as Code tools such as Ansible
+                                for configuration management and application deployment, as well as Terraform for cloud
+                                infrastructure provisioning. My scripting skills span bash for system task automation,
+                                Python for complex scripting and API integration, and PHP.
                             </p>
                         </div>
                     </div>
@@ -244,10 +248,11 @@
                             data-wow-delay="0.7s">
                             <i class="fa fa-object-ungroup sky-color"></i>
                             <h3>IT Trainer</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                magna aliquam erat volutpat.
+                            <p style="text-align: justify;">
+                                As a seasoned trainer, I transform complex technical concepts to make them accessible to
+                                all levels, with a teaching approach focused on practice and the concrete application of
+                                knowledge. I teach programming fundamentals, and data structures, with an
+                                emphasis on good coding practices and object-oriented design.
                             </p>
                         </div>
                     </div>
@@ -424,7 +429,7 @@
             </div>
         </section>
 
-        <div class="mh-portfolio-modal">
+        <div class="mh-portfolio-modal" id="mh">
             <div class="container">
                 <div class="row mh-portfolio-modal-inner">
                     <div class="col-sm-5">
@@ -463,6 +468,7 @@
                 </div>
             </div>
         </div>
+
         <!--
         ===================
            SKILLS
@@ -471,7 +477,7 @@
         <section class="mh-skills" id="mh-skills">
             <div class="home-v-img">
                 <div class="container">
-                    <div class="row section-separator">
+                    <div class="row my-5">
                         <div class="section-title text-center col-sm-12">
                             <!--<h2>Skills</h2>-->
                         </div>
@@ -589,7 +595,7 @@
         <section class="mh-experince image-bg featured-img-one" id="mh-experience">
             <div class="img-color-overlay">
                 <div class="container">
-                    <div class="row section-separator">
+                    <div class="row py-5">
                         <div class="col-sm-12 col-md-6">
                             <div class="mh-education">
                                 <h3 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Education</h3>
@@ -669,25 +675,17 @@
             </div>
         </section>
 
-        <!--
-        ===================
-           PORTFOLIO
-        ===================
-        -->
 
         <!--
-        ===================
-           QUATES
-        ===================
-
         ===================
            PRICING
         ===================
         -->
-        <section class="mh-pricing" id="mh-pricing">
+        <span id="mh-pricing"></span>
+        <section class="mh-pricing">
             <div class="">
                 <div class="container">
-                    <div class="row section-separator">
+                    <div class="row my-5">
                         <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s"
                             data-wow-delay="0.2s">
                             <h3>Pricing Table</h3>
@@ -747,83 +745,11 @@
 
         <!--
         ===================
-           BLOG
-        ===================
-        -->
-        <section class="mh-blog image-bg featured-img-two" id="mh-blog">
-            <div class="img-color-overlay">
-                <div class="container">
-                    <div class="row section-separator">
-                        <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s"
-                            data-wow-delay="0.2s">
-                            <h3>Featured Posts</h3>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                data-wow-delay="0.3s">
-                                <img src="assets/images/b-3.png" alt="" class="img-fluid">
-                                <div class="blog-inner">
-                                    <h2><a href="blog-single.html">A life without the daily traffic jams</a></h2>
-                                    <div class="mh-blog-post-info">
-                                        <ul>
-                                            <li><strong>Post On</strong><a href="#">24.11.19</a></li>
-                                            <li><strong>By</strong><a href="#">ThemeSpiders</a></li>
-                                        </ul>
-                                    </div>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a page when looking at its layout</p>
-                                    <a href="blog-single.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                data-wow-delay="0.5s">
-                                <img src="assets/images/b-2.png" alt="" class="img-fluid">
-                                <div class="blog-inner">
-                                    <h2><a href="blog-single.html">Proportion are what’s really needed</a></h2>
-                                    <div class="mh-blog-post-info">
-                                        <ul>
-                                            <li><strong>Post On</strong><a href="#">24.11.19</a></li>
-                                            <li><strong>By</strong><a href="#">ThemeSpiders</a></li>
-                                        </ul>
-                                    </div>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a page when looking at its layout</p>
-                                    <a href="blog-single.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4">
-                            <div class="mh-blog-item dark-bg wow fadeInUp" data-wow-duration="0.8s"
-                                data-wow-delay="0.7s">
-                                <img src="assets/images/b-1.png" alt="" class="img-fluid">
-                                <div class="blog-inner">
-                                    <h2><a href="blog-single.html">Mounts of paper work to remember the way</a></h2>
-                                    <div class="mh-blog-post-info">
-                                        <ul>
-                                            <li><strong>Post On</strong><a href="#">24.11.19</a></li>
-                                            <li><strong>By</strong><a href="#">ThemeSpiders</a></li>
-                                        </ul>
-                                    </div>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a page when looking at its layout</p>
-                                    <a href="blog-single.html">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--
-        ===================
            Testimonial
         ===================
         -->
-        <section class="mh-testimonial" id="mh-testimonial">
-            <div class="home-v-img">
+        <section class="mh-testimonial image-bg featured-img-two" id="mh-testimonial">
+            <div class="home-v-img img-color-overlay">
                 <div class="container">
                     <div class="row section-separator">
                         <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s"
@@ -900,12 +826,13 @@
             </div>
         </section>
 
+
         <!--
         ===================
            FOOTER 3
         ===================
         -->
-        <footer class="mh-footer mh-footer-3">
+        <footer class="mh-footer mh-footer-3" id="mh-contact">
             <div class="container-fluid">
                 <div class="row section-separator">
                     <div class="col-sm-12 section-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
@@ -991,25 +918,21 @@
                                         </div>
                                     </form>
                                 </div>
-                                <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s"
+
+                            </div>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col text-center mh-copyright wow fadeInUp" data-wow-duration="0.8s"
                                     data-wow-delay="0.2s">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="text-left text-xs-center">
-                                                <p><a href="templateshub.net">Templates Hub</a></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <ul class="social-icon">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <ul class="social-icon d-flex justify-content-center align-items-center">
+                                        <li><a href="https://www.facebook.com/nanfack.steve.7"><i
+                                                    class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://t.me/Le_Sudo"><i class="fa fa-telegram"></i></a></li>
+                                        <li><a href="https://github.com/NanfackSteve"><i class="fa fa-github"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
