@@ -398,6 +398,11 @@
 
 @media only screen and (max-width: 768px) {
 
+  .img-testimonial {
+    height: 9rem;
+    width: 9rem;
+  }
+
   .my-pl {
     padding-left: 0rem !important;
   }
