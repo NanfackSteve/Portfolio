@@ -398,6 +398,10 @@
 
 @media only screen and (max-width: 768px) {
 
+  .p-justify {
+    text-align: justify;
+  }
+
   .img-testimonial {
     height: 9rem;
     width: 9rem;
